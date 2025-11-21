@@ -1,0 +1,84 @@
+body {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: Arial;
+}
+
+/* Calculator body */
+.calc-body {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 25px;
+    width: 260px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Display screen */
+.calc-screen {
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.calc-screen input {
+    width: 100%;
+    height: 55px;
+    font-size: 22px;
+    border: none;
+    background: #b9ffb0;
+    padding: 5px 10px;
+    border-radius: 8px;
+    text-align: right;
+}
+
+/* Buttons grid */
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* 3D buttons */
+button {
+    height: 55px;
+    font-size: 20px;
+    border: none;
+    background: #444;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #222;   /* 3D effect */
+    transition: 0.1s;
+}
+
+/* Press animation */
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #222;
+    background: #333;
+}
+
+/* Wide buttons */
+.wide {
+    grid-column: span 2;
+}
+
+/* "=" special button */
+.equal {
+    background: #ff9500;
+    box-shadow: 0 5px 0 #b86a00;
+}
+.equal:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px 0 #b86a00;
+}
+
+/* funny text style */
+#funny {
+    color: #00ff8c;
+    margin-top: 10px;
+    min-height: 20px;
+}
